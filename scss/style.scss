@@ -1,0 +1,68 @@
+@import "normalize";
+@import "layout";
+
+body{
+	
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	border: 1px solid #aaa;
+	padding: 5px 10px;
+	background: #fff;
+	border-radius: 6px;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+	&:focus{
+		outline:none;
+		box-shadow: 0 0 5px rgb(206, 51, 226); 
+	}
+	&:disabled{
+		border-color:#ddd;
+		color: #ddd;
+		background: #fff;	
+	}
+}
+
+
+
+.ba-todo-list{
+	max-width: 800px;
+	margin: 0 auto; 
+	padding: 50px 0;
+}
+.ba-title{
+	text-transform: uppercase;
+	margin:0 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 4px solid #000;
+}
